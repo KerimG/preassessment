@@ -1,5 +1,5 @@
-My personal webpack starter pack with ES6 and Sass/Scss.
+Preassessment Tasks
 
-Feel free to use but do know there are a bunch of really good starter projects already out there.
+There is a dev build of the project within the dev folder, that you can run. If you want to rebuild the project, simply run "npm run dev".
 
-TODO: create branches with specific additional features such as framework or language support like Vue TypeScript
+You can also simply run "webpack-dev-server" from within the project folder and go to http://localhost:8080
