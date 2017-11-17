@@ -1,12 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Webpack Starter Pack</title>
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Pre Assessment Test</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-<h1>Hello World</h1>
+    <section class="task-1">
+        <h2>Task 1</h2>
+        <div class="task not-started">
+            <div class="flex-container">
+                <div class="task-icon">
+                    <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                </div>
+                <div class="task-details">
+                    <div class="task-title">
+                        This is my task title
+                        </h3>
+                        <div class="task-status">
+                            Not started
+                        </div>
+                        <div class="task-deadline">
+                            Completion date 21/10/2017
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="task in-progress">
+            <div class="flex-container">
+                <div class="task-icon">
+                    <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+                </div>
+                <div class="task-details">
+                    <div class="task-title">
+                        This is my current task's title
+                        </h3>
+                        <div class="task-status">
+                            In progress
+                        </div>
+                        <div class="task-deadline">
+                            Completion date 21/10/2017
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="task overdue">
+            <div class="flex-container">
+                <div class="task-icon">
+                    <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                </div>
+                <div class="task-details">
+                    <div class="task-title">
+                        Oh oh! This task is overdue
+                        </h3>
+                        <div class="task-status">
+                            Overdue
+                        </div>
+                        <div class="task-deadline">
+                            Completion date 21/10/2017
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="task done">
+            <div class="flex-container">
+                <div class="task-icon">
+                    <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+                </div>
+                <div class="task-details">
+                    <div class="task-title">
+                        This is a done task
+                        </h3>
+                        <div class="task-status">
+                            Done
+                        </div>
+                        <div class="task-deadline">
+                            Completion date 21/10/2017
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="task-2">
+        <h2>Task 2</h2>
+        <div id="app">
+            <ul class="news-list">
+                <li v-for="item in pressReleases" class="news">
+                    <a class="flex-container" :href="item.link">
+                        <div class="author flex-container flex-column">
+                            <img :src="item.authorImageUrl" class="author-image">
+                            <div class="author-name">
+                                {{ item.authorName }}
+                            </div>
+                        </div>
+                        <div class="news-details">
+                            <div class="date">
+                                {{ item.timestamp | date }}
+                            </div>
+                            <div class="headline">
+                                {{ item.headline }}
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <script src="https://momentjs.com/downloads/moment-with-locales.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.17.1/axios.js"></script>
+    <script src="https://unpkg.com/vue@2.5.4/dist/vue.js"></script>
 </body>
+
 </html>
